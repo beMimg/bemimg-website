@@ -1,12 +1,16 @@
 import Hero from "@/components/Hero";
-import Image from "next/image";
+import Nav from "@/components/Nav";
 
 export default function Home() {
   return (
-    <main>
-      <div>
+    <>
+      <header className="absolute flex items-center justify-center  z-20 top-0 left-0 w-full p-14">
+        <Nav />
+      </header>
+      <main>
         <Hero />
-      </div>
-    </main>
+        <div className="h-[700px]"></div>
+      </main>
+    </>
   );
 }
