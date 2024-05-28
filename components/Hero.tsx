@@ -9,7 +9,7 @@ const Hero = () => {
   const scale = useTransform(scrollY, [0, 700], [1, 3]);
 
   return (
-    <section>
+    <section className="overflow-hidden">
       <AuroraBackground>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
@@ -19,9 +19,9 @@ const Hero = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          viewport={{ once: true }}
           style={{ scale: scale }}
-          className="relative overflow-hidden flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
+          viewport={{ once: true }}
+          className="relative flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
         >
           <h1 className="text-3xl md:text-9xl font-bold dark:text-white text-center">
             Hi, I'm Bernardo
