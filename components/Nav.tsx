@@ -32,7 +32,7 @@ const Nav = () => {
         once: true,
       }}
       className={`w-72 fixed p-2 z-40 mx-auto transition-all flex flex-row items-center gap-2  text-base font-medium rounded-full ${
-        !isTopOfScreen && "bg-gray-500 scale-105"
+        !isTopOfScreen && "bg-glass-effect scale-105"
       }`}
     >
       <a className={aStyle}>Work</a>

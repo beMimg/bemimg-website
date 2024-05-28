@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-glass-effect {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Adjust the alpha value for transparency */
+  backdrop-filter: blur(10px); /* Adjust the blur value for the glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}

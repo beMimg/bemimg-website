@@ -1,9 +1,13 @@
 "use client";
-import React, { createContext } from "react";
+import React, { useRef } from "react";
 import { AuroraBackground } from "./ui/aurora-background";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = () => {
+  const { scrollY } = useScroll();
+
+  const scale = useTransform(scrollY, [0, 700], [1, 3]);
+
   return (
     <section>
       <AuroraBackground>
@@ -15,7 +19,9 @@ const Hero = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
+          viewport={{ once: true }}
+          style={{ scale: scale }}
+          className="relative overflow-hidden flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
         >
           <h1 className="text-3xl md:text-9xl font-bold dark:text-white text-center">
             Hi, I'm Bernardo
