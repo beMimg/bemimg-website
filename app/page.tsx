@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import Work from "@/components/Work";
@@ -13,8 +14,8 @@ export default function Home() {
         <Hero />
         <Work />
         <About />
-        <div className="h-[300px]"></div>
       </main>
+      <Footer />
     </>
   );
 }
