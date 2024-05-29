@@ -7,6 +7,7 @@ const Hero = () => {
   const { scrollY } = useScroll();
 
   const scale = useTransform(scrollY, [0, 700], [1, 3]);
+  const opacity = useTransform(scrollY, [0, 700], [1, 0]);
 
   return (
     <section className="overflow-hidden">
@@ -19,7 +20,7 @@ const Hero = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          style={{ scale: scale }}
+          style={{ scale, opacity }}
           viewport={{ once: true }}
           className="relative flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
         >

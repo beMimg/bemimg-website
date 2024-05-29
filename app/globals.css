@@ -12,3 +12,26 @@
   backdrop-filter: blur(10px); /* Adjust the blur value for the glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
 }
+.bg-glass-effect2 {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.046
+  ); /* Adjust the alpha value for transparency */
+  backdrop-filter: blur(10px); /* Adjust the blur value for the glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+.bg-glass-effect2:hover {
+  transform: scale(1.03);
+}
+
+.bg-gradiant {
+  background: rgb(24, 24, 27);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 24, 27, 1) 5%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}

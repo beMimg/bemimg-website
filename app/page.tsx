@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
+import Work from "@/components/Work";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       </header>
       <main>
         <Hero />
-        <div className="h-screen bg-[#18181b]"></div>
+        <Work />
       </main>
     </>
   );
