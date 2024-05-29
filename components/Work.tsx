@@ -6,8 +6,8 @@ import { projects } from "@/utils/projects";
 
 const Work = () => {
   return (
-    <section className="bg-gradiant pt-10">
-      <div className="max-w-7xl mx-auto flex flex-col text-white gap-20  ">
+    <section className="px-6">
+      <div className="max-w-7xl mx-auto flex flex-col text-white gap-24">
         <motion.header
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}

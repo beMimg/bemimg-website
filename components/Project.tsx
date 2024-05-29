@@ -15,18 +15,21 @@ interface ProjectProps {
 const Project = ({ image, title, description, tech }: ProjectProps) => {
   return (
     <motion.article
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0, y: 400 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
         duration: 0.4,
         ease: "easeInOut",
       }}
-      className=" shadow-2xl flex flex-col md:flex-row justify-between gap-12 bg-glass-effect2 p-4 rounded-3xl py-10 "
+      viewport={{
+        once: true,
+      }}
+      className=" shadow-2xl flex flex-col md:flex-row justify-between gap-12  rounded-3xl  "
     >
-      <figure className="min-w-[200px] lg:min-w-[600px]">
-        <Image src={image} className="w-full" alt="mockup" />
+      <figure className="md:min-w-[300px] lg:min-w-[500px] max-w-[700px]">
+        <Image src={image} className=" w-full " alt="mockup" />
       </figure>
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between gap-3">
         <p className="text-xl">{title}</p>
         <p className="font-extralight opacity-80">{description}</p>
         <p className="font-extralight opacity-80">{tech}</p>

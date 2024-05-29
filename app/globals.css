@@ -27,11 +27,40 @@
   transform: scale(1.03);
 }
 
-.bg-gradiant {
-  background: rgb(24, 24, 27);
-  background: linear-gradient(
-    180deg,
-    rgba(24, 24, 27, 1) 5%,
-    rgba(0, 0, 0, 1) 100%
-  );
+.glow {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+}
+
+.test {
+  transition: opacity 0.5s 0.5s, filter 0.5s;
+  filter: blur(45px);
+}
+
+.glow-container {
+  position: relative;
+  display: inline-block; /* Make sure the container fits the content */
+}
+
+.glow-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(45px);
+  opacity: 0;
+  transition: opacity 0.5s 0.5s, filter 0.5s;
+  z-index: -1;
+}
+
+.glow-container:hover::before {
+  opacity: 1;
+  filter: blur(45px);
 }
