@@ -25,7 +25,7 @@ const Hero = () => {
           className="relative flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
         >
           <h1 className="text-3xl md:text-9xl font-bold dark:text-white text-center">
-            Hi, I'm Bernardo
+            Hi, I&apos;m Bernardo
           </h1>
           <h2 className="font-extralight text-base md:text-6xl dark:text-neutral-200 py-4">
             A Web Developer.

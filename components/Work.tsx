@@ -22,6 +22,7 @@ const Work = () => {
         </motion.header>
         {projects.map((project) => (
           <Project
+            key={project.title}
             image={project.image}
             title={project.title}
             description={project.description}
