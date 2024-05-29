@@ -15,7 +15,7 @@ interface ProjectProps {
 const Project = ({ image, title, description, tech }: ProjectProps) => {
   return (
     <motion.article
-      initial={{ opacity: 0, y: 400 }}
+      initial={{ opacity: 0, y: 200 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
         duration: 0.4,

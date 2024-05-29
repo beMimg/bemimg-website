@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { AuroraBackground } from "./ui/aurora-background";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { FaArrowDown } from "react-icons/fa";
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -24,15 +25,19 @@ const Hero = () => {
           viewport={{ once: true }}
           className="relative flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
         >
-          <h1 className="text-3xl md:text-9xl font-bold dark:text-white text-center">
+          <h1 className="text-4xl md:text-9xl font-bold dark:text-white text-center">
             Hi, I&apos;m Bernardo
           </h1>
-          <h2 className="font-extralight text-base md:text-6xl dark:text-neutral-200 py-4">
+          <h2 className="font-extralight text-2xl md:text-8xl dark:text-neutral-200 py-4">
             A Web Developer.
           </h2>
-          <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-            See Work
-          </button>
+          <a
+            href="#work"
+            className="bg-white flex flex-row items-center gap-2 text-black rounded-full text-xl px-4 py-2"
+          >
+            <p>See Work</p>
+            <FaArrowDown className="animate-bounce" />
+          </a>
         </motion.div>
       </AuroraBackground>
     </section>
