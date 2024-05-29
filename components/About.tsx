@@ -1,6 +1,10 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { techStack } from "@/utils/techStack";
+import ListOfTechs from "./ListOfTechs";
+import Image from "next/image";
+import me from "@/assets/me.jpg";
 
 const About = () => {
   return (
@@ -16,14 +20,33 @@ const About = () => {
           }}
           className="text-4xl font-semibold"
         >
-          About
+          Hello
         </motion.header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error amet
-          labore est saepe libero ipsa dicta debitis doloribus odio consequuntur
-          neque qui asperiores exercitationem, totam tempore quae. Modi,
-          distinctio consequuntur?
-        </p>
+        <div className="flex flex-col md:flex-row gap-12 justify-between">
+          <div className="flex flex-col justify-between gap-8">
+            <p>
+              I&apos;m Bernardo, a dedicated full stack web developer,
+              passionate about creating simplistic, accessible and fucntional
+              user experiences.
+            </p>
+            <p>
+              Currently looking to be a integral part of a software development
+              team, keep improving and learning new things.
+            </p>
+            <div className="flex flex-row justify-between">
+              {techStack.map((tech) => (
+                <ListOfTechs
+                  key={tech.title}
+                  title={tech.title}
+                  stack={tech.stack}
+                />
+              ))}
+            </div>
+          </div>
+          <figure className="md:min-w-[300px] lg:min-w-[500px] max-w-[700px]">
+            <Image src={me} alt="self" className="w-full " />
+          </figure>
+        </div>
       </div>
     </section>
   );

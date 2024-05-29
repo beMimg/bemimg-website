@@ -13,6 +13,7 @@ export default function Home() {
         <Hero />
         <Work />
         <About />
+        <div className="h-[300px]"></div>
       </main>
     </>
   );
