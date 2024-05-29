@@ -35,9 +35,15 @@ const Nav = () => {
         !isTopOfScreen && "bg-glass-effect scale-105"
       }`}
     >
-      <a className={aStyle}>Work</a>
-      <a className={aStyle}>About</a>
-      <a className={aStyle}>Contact</a>
+      <a href="#work" className={aStyle}>
+        Work
+      </a>
+      <a href="#about" className={aStyle}>
+        About
+      </a>
+      <a href="#contact" className={aStyle}>
+        Contact
+      </a>
     </motion.nav>
   );
 };
