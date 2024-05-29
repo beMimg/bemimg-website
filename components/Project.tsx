@@ -15,21 +15,34 @@ interface ProjectProps {
 const Project = ({ image, title, description, tech }: ProjectProps) => {
   return (
     <motion.article
-      initial={{ opacity: 0, y: 200 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.4,
-        ease: "easeInOut",
-      }}
-      viewport={{
-        once: true,
-      }}
+      // initial={{ opacity: 0, y: 200 }}
+      // whileInView={{ opacity: 1, y: 0 }}
+      // transition={{
+      //   duration: 0.4,
+      //   ease: "easeInOut",
+      // }}
       className=" shadow-2xl flex flex-col md:flex-row justify-between gap-12  rounded-3xl  "
     >
-      <figure className="md:min-w-[300px] lg:min-w-[500px] max-w-[700px]">
+      <motion.figure
+        initial={{ x: -200 }}
+        whileInView={{ x: 0 }}
+        transition={{
+          duration: 0.4,
+          ease: "easeInOut",
+        }}
+        className="md:min-w-[300px] lg:min-w-[500px] max-w-[700px]"
+      >
         <Image src={image} className=" w-full " alt="mockup" />
-      </figure>
-      <div className="flex flex-col justify-between gap-3">
+      </motion.figure>
+      <motion.div
+        initial={{ x: 200 }}
+        whileInView={{ x: 0 }}
+        transition={{
+          duration: 0.4,
+          ease: "easeInOut",
+        }}
+        className="flex flex-col justify-between gap-3"
+      >
         <p className="text-xl">{title}</p>
         <p className="font-extralight opacity-80">{description}</p>
         <p className="font-extralight opacity-80">{tech}</p>
@@ -43,7 +56,7 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
             <FaGithub className="text-base" />
           </a>
         </div>
-      </div>
+      </motion.div>
     </motion.article>
   );
 };
