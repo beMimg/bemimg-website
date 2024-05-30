@@ -14,15 +14,7 @@ interface ProjectProps {
 
 const Project = ({ image, title, description, tech }: ProjectProps) => {
   return (
-    <motion.article
-      // initial={{ opacity: 0, y: 200 }}
-      // whileInView={{ opacity: 1, y: 0 }}
-      // transition={{
-      //   duration: 0.4,
-      //   ease: "easeInOut",
-      // }}
-      className=" shadow-2xl flex flex-col md:flex-row justify-between gap-12  rounded-3xl  "
-    >
+    <article className="overflow-hidden  flex flex-col md:flex-row justify-between gap-12 ">
       <motion.figure
         initial={{ x: -200 }}
         whileInView={{ x: 0 }}
@@ -57,8 +49,15 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
           </a>
         </div>
       </motion.div>
-    </motion.article>
+    </article>
   );
 };
+
+// initial={{ opacity: 0, y: 200 }}
+// whileInView={{ opacity: 1, y: 0 }}
+// transition={{
+//   duration: 0.4,
+//   ease: "easeInOut",
+// }}
 
 export default Project;
