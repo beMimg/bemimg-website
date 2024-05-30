@@ -30,7 +30,6 @@ const About = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          viewport={{ once: true }}
           className="flex flex-col md:flex-row gap-12 justify-between"
         >
           <div className="flex flex-col justify-between gap-20 ">
