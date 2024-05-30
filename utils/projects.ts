@@ -7,21 +7,21 @@ import pmg from "@/assets/pmg.png";
 export const projects = [
   {
     image: pmg,
-    title: "Lorem, ipsum.",
+    title: "PMG",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sunt epudiandae consequatur quidem quo omnis unde! Earum beatae natus perferendis iure, molestias expedita adipisci dolor consequuntur?Eius, saepe! Molestias quo sapiente asperiores, dolore, minus alias ex dolores perferendis corporis voluptas sed.",
     tech: " Lorem ipsum dolor sit amet.",
   },
   {
     image: xClone,
-    title: "Lorem, ipsum.",
+    title: "X Clone",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sunt epudiandae consequatur quidem quo omnis unde! Earum beatae natus perferendis iure, molestias expedita adipisci dolor consequuntur?Eius, saepe! Molestias quo sapiente asperiores, dolore, minus alias ex dolores perferendis corporis voluptas sed.",
     tech: " Lorem ipsum dolor sit amet.",
   },
   {
     image: messageApp,
-    title: "Lorem, ipsum.",
+    title: "Message App",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sunt epudiandae consequatur quidem quo omnis unde! Earum beatae natus perferendis iure, molestias expedita adipisci dolor consequuntur?Eius, saepe! Molestias quo sapiente asperiores, dolore, minus alias ex dolores perferendis corporis voluptas sed.",
     tech: " Lorem ipsum dolor sit amet.",
@@ -29,7 +29,7 @@ export const projects = [
 
   {
     image: movieWish,
-    title: "Lorem, ipsum.",
+    title: "Movie Wish",
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sunt epudiandae consequatur quidem quo omnis unde! Earum beatae natus perferendis iure, molestias expedita adipisci dolor consequuntur?Eius, saepe! Molestias quo sapiente asperiores, dolore, minus alias ex dolores perferendis corporis voluptas sed.",
     tech: " Lorem ipsum dolor sit amet.",

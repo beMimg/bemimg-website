@@ -25,10 +25,10 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
       >
         <Image
           src={image}
-          className="brightness-110 relative z-10 w-full h-full  "
+          className="brightness-110 relative z-10 w-full h-full hover:brightness-125 "
           alt="mockup"
         />
-        <div className="bg-white absolute inset-0 w-full h-full blur-md opacity-20"></div>
+        {/* <div className="bg-white absolute inset-0 w-full h-full blur-md opacity-20"></div> */}
       </motion.figure>
       <motion.div
         initial={{ opacity: 0, x: 200 }}
