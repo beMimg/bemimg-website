@@ -6,32 +6,30 @@ import pmg from "@/assets/pmg.png";
 
 export const projects = [
   {
-    image: pmg,
-    title: "PMG",
-    description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sunt epudiandae consequatur quidem quo omnis unde! Earum beatae natus perferendis iure, molestias expedita adipisci dolor consequuntur?Eius, saepe! Molestias quo sapiente asperiores, dolore, minus alias ex dolores perferendis corporis voluptas sed.",
-    tech: " Lorem ipsum dolor sit amet.",
-  },
-  {
     image: xClone,
     title: "X Clone",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sunt epudiandae consequatur quidem quo omnis unde! Earum beatae natus perferendis iure, molestias expedita adipisci dolor consequuntur?Eius, saepe! Molestias quo sapiente asperiores, dolore, minus alias ex dolores perferendis corporis voluptas sed.",
-    tech: " Lorem ipsum dolor sit amet.",
+      "X Clone is a social media platform inspired by X, designed to foster social interactions and sharing within a community. Dynamic platform for text/image posts, follows, likes, and comments. Profile management: trackslikes, posts, follows, and followers.",
+    tech: "React, JavaScript, TailwindCSS, Node.js, Express.js, MongoDB, Passport.js, Cloudinary",
+    preview: "https://x-clone-bemimg.netlify.app",
+    code: "https://github.com/beMimg/x-clone-frontend",
   },
   {
     image: messageApp,
     title: "Message App",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sunt epudiandae consequatur quidem quo omnis unde! Earum beatae natus perferendis iure, molestias expedita adipisci dolor consequuntur?Eius, saepe! Molestias quo sapiente asperiores, dolore, minus alias ex dolores perferendis corporis voluptas sed.",
-    tech: " Lorem ipsum dolor sit amet.",
+      "Messaging App is a social media platform inspired by WhatsApp, offering seamless messaging, interactions, and follow/unfollow features. It includes message status verification and comprehensive user profile viewing capabilities.",
+    tech: "React, JavaScript, TailwindCSS, Node.js, Express.js, MongoDB, Passport.js, Multer",
+    preview: "https://messagingbemimg.netlify.app/",
+    code: "https://github.com/beMimg/messaging-app-frontend",
   },
-
   {
     image: movieWish,
     title: "Movie Wish",
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sunt epudiandae consequatur quidem quo omnis unde! Earum beatae natus perferendis iure, molestias expedita adipisci dolor consequuntur?Eius, saepe! Molestias quo sapiente asperiores, dolore, minus alias ex dolores perferendis corporis voluptas sed.",
-    tech: " Lorem ipsum dolor sit amet.",
+      "Movie platform for search, detailed viewing, trailer watching where users can browse trending movies and search titles by category, Includes an integrated wish list with localStorage for persistance.",
+    tech: "React, JavaScript, TailwindCSS",
+    preview: "https://friendly-starburst-6e15fd.netlify.app/",
+    code: "https://github.com/beMimg/movie-wish",
   },
 ];

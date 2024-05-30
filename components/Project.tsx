@@ -9,11 +9,20 @@ interface ProjectProps {
   title: string;
   description: string;
   tech: string;
+  preview: string;
+  code: string;
 }
 
-const Project = ({ image, title, description, tech }: ProjectProps) => {
+const Project = ({
+  image,
+  title,
+  description,
+  tech,
+  preview,
+  code,
+}: ProjectProps) => {
   return (
-    <article className="overflow-hidden flex flex-col lg:flex-row justify-between gap-12 p-6">
+    <article className="overflow-hidden flex flex-col lg:flex-row gap-12 justify-between p-6">
       <motion.figure
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -21,14 +30,13 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
           duration: 0.4,
           ease: "easeInOut",
         }}
-        className="relative h-full"
+        className="relative h-full lg:w-[55%] "
       >
         <Image
           src={image}
-          className="brightness-110 relative z-10 w-full h-full hover:brightness-125 "
+          className="relative z-10 w-full h-full"
           alt="mockup"
         />
-        {/* <div className="bg-white absolute inset-0 w-full h-full blur-md opacity-20"></div> */}
       </motion.figure>
       <motion.div
         initial={{ opacity: 0, x: 200 }}
@@ -37,17 +45,25 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
           duration: 0.4,
           ease: "easeInOut",
         }}
-        className="flex flex-col justify-between gap-4"
+        className="flex flex-col justify-between gap-4 lg:w-[45%]"
       >
-        <p className="text-3xl">{title}</p>
+        <p className="text-3xl font-semibold glow-text">{title}</p>
         <p className="font-extralight opacity-70 ">{description}</p>
         <p className="font-extralight opacity-70">{tech}</p>
         <div className="flex flex-col self-end justify-evenly">
-          <a className="flex flex-row items-center gap-2 self-end rounded-full p-2 px-4 cursor-pointer">
+          <a
+            href={preview}
+            target="a_blank"
+            className="flex flex-row items-center gap-2 self-end rounded-full  cursor-pointer"
+          >
             <p className="font-semibold uppercase">Visit project</p>
             <FaExternalLinkAlt />
           </a>
-          <a className=" flex flex-row items-center rounded-full gap-2 self-end p-2 px-4 cursor-pointer">
+          <a
+            href={code}
+            target="a_blank"
+            className=" flex flex-row items-center rounded-full gap-2 self-end cursor-pointer"
+          >
             <p className="font-semibold uppercase">See code</p>
             <FaGithub />
           </a>

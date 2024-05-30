@@ -28,6 +28,8 @@ const Work = () => {
               title={project.title}
               description={project.description}
               tech={project.tech}
+              preview={project.preview}
+              code={project.code}
             />
           ))}
         </div>
