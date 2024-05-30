@@ -22,18 +22,17 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
           duration: 0.4,
           ease: "easeInOut",
         }}
-        className="relative rounded-none z-1 bg-gradient-to-r from-black to-gray-800 bg-[length:200%] animate-gradientMove flex justify-center items-center"
+        className="relative"
       >
         <Image
           src={image}
-          className=" brightness-110 relative z-20 w-full h-full object-cover object-center cursor-pointer opacity-100 transition-opacity duration-700 rounded-none shadow-none"
+          className="brightness-110 relative z-10 w-full h-full  "
           alt="mockup"
         />
-        <Image
-          src={image}
-          className="absolute top-0 left-0 w-full h-full object-cover object-center rounded-none opacity-80 transition-opacity duration-500 delay-500 blur-[8px]  "
-          alt="mockup"
-        />
+        <div
+          className="bg-white absolute top-0 left-0 w-full h-full 
+      blur-[6px]"
+        ></div>
       </motion.figure>
       <motion.div
         initial={{ opacity: 0, x: 200 }}
