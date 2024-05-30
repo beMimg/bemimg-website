@@ -8,7 +8,7 @@ import me from "@/assets/me.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="px-6 text-lg ">
+    <section id="about" className="px-6 text-lg">
       <div className="max-w-7xl mx-auto flex flex-col text-white gap-24">
         <motion.header
           initial={{ opacity: 0, x: -100 }}
@@ -37,11 +37,12 @@ const About = () => {
             <p className=" font-extralight opacity-70">
               I&apos;m Bernardo, Full Stack JavaScript Developer experienced on
               the <strong>MERN</strong> Stack (MongoDB, Express, React & Node).
-              I've honed my skills through self-learning and hands-on projects.
-              I'm passionate about <strong>problem-solving</strong>,{" "}
-              <strong>coding</strong> and <strong>learning</strong>. After a
-              long journey driven by my passion for programming, I've decided to
-              make a career change to pursue this dream.
+              I&apos;ve honed my skills through self-learning and hands-on
+              projects. I&apos;m passionate about{" "}
+              <strong>problem-solving</strong>, <strong>coding</strong> and{" "}
+              <strong>learning</strong>. After a long journey driven by my
+              passion for programming, I&apos;ve decided to make a career change
+              to pursue this dream.
             </p>
             <div className="flex flex-row justify-between gap-4">
               {techStack.map((tech) => (
