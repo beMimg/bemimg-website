@@ -16,8 +16,8 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
   return (
     <article className="overflow-hidden  flex flex-col md:flex-row justify-between gap-12 ">
       <motion.figure
-        initial={{ x: -200 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{
           duration: 0.4,
           ease: "easeInOut",
@@ -27,25 +27,25 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
         <Image src={image} className=" w-full " alt="mockup" />
       </motion.figure>
       <motion.div
-        initial={{ x: 200 }}
-        whileInView={{ x: 0 }}
+        initial={{ opacity: 0, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{
           duration: 0.4,
           ease: "easeInOut",
         }}
-        className="flex flex-col justify-between gap-3"
+        className="flex flex-col justify-between gap-4"
       >
-        <p className="text-xl">{title}</p>
-        <p className="font-extralight opacity-80">{description}</p>
-        <p className="font-extralight opacity-80">{tech}</p>
+        <p className="text-3xl">{title}</p>
+        <p className="font-extralight opacity-70 ">{description}</p>
+        <p className="font-extralight opacity-70">{tech}</p>
         <div className="flex flex-col self-end justify-evenly">
           <a className="flex flex-row items-center gap-2 self-end rounded-full p-2 px-4 cursor-pointer">
-            <p className="text-base">Visit project</p>
-            <FaExternalLinkAlt className="text-base" />
+            <p className="font-semibold uppercase">Visit project</p>
+            <FaExternalLinkAlt />
           </a>
           <a className=" flex flex-row items-center rounded-full gap-2 self-end p-2 px-4 cursor-pointer">
-            <p className="text-base">See code</p>
-            <FaGithub className="text-base" />
+            <p className="font-semibold uppercase">See code</p>
+            <FaGithub />
           </a>
         </div>
       </motion.div>

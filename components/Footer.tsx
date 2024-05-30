@@ -5,14 +5,21 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-black h-[300px] px-6 ">
+    <footer id="contact" className="bg-black h-[300px] text-lg px-6 ">
       <div className="max-w-7xl  mx-auto justify-between border-t border-gray-700 py-8  h-full flex flex-row text-white">
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-1">
-            <p className="text-xl">Contact Me</p>
-            <a href="mailto:bemimg.dev@gmail.com">bemimg.dev@gmail.com</a>
+            <p>Contact Me</p>
+            <a
+              href="mailto:bemimg.dev@gmail.com"
+              className="font-extralight opacity-70"
+            >
+              bemimg.dev@gmail.com
+            </a>
           </div>
-          <p>© 2024 Bernardo Guerreiro</p>
+          <p className="text-base font-extralight opacity-70">
+            © 2024 Bernardo Guerreiro
+          </p>
         </div>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-1">
@@ -41,7 +48,9 @@ const Footer = () => {
               <MdOutlineEmail />
             </a>
           </div>
-          <p>Cádiz, Spain</p>
+          <p className="text-base md:text-lg font-extralight opacity-70">
+            Cádiz, Spain
+          </p>
         </div>
       </div>
     </footer>

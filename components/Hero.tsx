@@ -25,11 +25,11 @@ const Hero = () => {
           viewport={{ once: true }}
           className="relative flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
         >
-          <h1 className="text-4xl md:text-9xl font-bold dark:text-white text-center">
+          <h1 className="text-6xl md:text-9xl font-bold dark:text-white text-center">
             Hi, I&apos;m Bernardo
           </h1>
           <h2 className="font-extralight text-2xl md:text-8xl dark:text-neutral-200 py-4">
-            A Web Developer.
+            A Full Stack Web Developer.
           </h2>
           <a
             href="#work"

@@ -6,7 +6,7 @@ import { projects } from "@/utils/projects";
 
 const Work = () => {
   return (
-    <section className="px-6" id="work">
+    <section className="px-6 text-lg" id="work">
       <div className="max-w-7xl mx-auto flex flex-col text-white gap-24">
         <motion.header
           initial={{ opacity: 0, x: -100 }}
@@ -16,19 +16,21 @@ const Work = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="text-4xl font-semibold"
+          className="text-6xl font-semibold"
         >
           Work
         </motion.header>
-        {projects.map((project) => (
-          <Project
-            key={project.title}
-            image={project.image}
-            title={project.title}
-            description={project.description}
-            tech={project.tech}
-          />
-        ))}
+        <div className="flex flex-col gap-36 md:gap-52">
+          {projects.map((project) => (
+            <Project
+              key={project.title}
+              image={project.image}
+              title={project.title}
+              description={project.description}
+              tech={project.tech}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
