@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-glass-effect {
   background: rgba(
     255,
@@ -12,6 +16,7 @@
   backdrop-filter: blur(10px); /* Adjust the blur value for the glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
 }
+
 .bg-glass-effect2 {
   background: rgba(
     255,
@@ -25,10 +30,6 @@
 
 .bg-glass-effect2:hover {
   transform: scale(1.03);
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .glow-text {

@@ -22,7 +22,7 @@ const Project = ({
   code,
 }: ProjectProps) => {
   return (
-    <article className="overflow-hidden flex flex-col lg:flex-row gap-12 justify-between p-6">
+    <article className="overflow-hidden flex flex-col lg:flex-row gap-12 justify-between">
       <motion.figure
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -30,13 +30,9 @@ const Project = ({
           duration: 0.4,
           ease: "easeInOut",
         }}
-        className="relative h-full lg:w-[55%] "
+        className="h-full lg:w-[55%] "
       >
-        <Image
-          src={image}
-          className="relative z-10 w-full h-full"
-          alt="mockup"
-        />
+        <Image src={image} className="w-full h-full" alt="mockup" />
       </motion.figure>
       <motion.div
         initial={{ opacity: 0, x: 200 }}
