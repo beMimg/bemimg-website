@@ -10,7 +10,7 @@ export default function Home() {
       <header className="absolute flex items-center justify-center  z-20 top-0 left-0 w-full p-14 ">
         <Nav />
       </header>
-      <main className="flex flex-col gap-40 bg-black pb-40">
+      <main className="flex flex-col bg-black">
         <Hero />
         <Work />
         <About />

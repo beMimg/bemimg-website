@@ -6,7 +6,7 @@ import { projects } from "@/utils/projects";
 
 const Work = () => {
   return (
-    <section className="px-6 text-lg" id="work">
+    <section className="px-6 text-lg py-20" id="work">
       <div className="max-w-7xl mx-auto flex flex-col text-white gap-24">
         <motion.header
           initial={{ opacity: 0, x: -100 }}

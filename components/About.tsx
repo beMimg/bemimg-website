@@ -8,7 +8,7 @@ import me from "@/assets/me.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="px-6 text-lg">
+    <section id="about" className="px-6 pb-40 pt-20 text-lg">
       <div className="max-w-7xl mx-auto flex flex-col text-white gap-24">
         <motion.header
           initial={{ opacity: 0, x: -100 }}
