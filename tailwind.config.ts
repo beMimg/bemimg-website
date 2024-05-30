@@ -14,8 +14,13 @@ const config: Config = {
     extend: {
       animation: {
         aurora: "aurora 60s linear infinite",
+        gradientMove: "gradientMove 2s linear infinite",
       },
       keyframes: {
+        gradientMove: {
+          "0%": { "background-position": "0% 50%" },
+          "100%": { "background-position": "100% 50%" },
+        },
         aurora: {
           from: {
             backgroundPosition: "50% 50%, 50% 50%",

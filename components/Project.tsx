@@ -14,7 +14,7 @@ interface ProjectProps {
 
 const Project = ({ image, title, description, tech }: ProjectProps) => {
   return (
-    <article className="overflow-hidden  flex flex-col md:flex-row justify-between gap-12 ">
+    <article className="overflow-hidden flex flex-col md:flex-row justify-between gap-12 p-6">
       <motion.figure
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -22,9 +22,18 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
           duration: 0.4,
           ease: "easeInOut",
         }}
-        className="md:min-w-[300px] lg:min-w-[500px] max-w-[700px]"
+        className="relative rounded-none z-1 bg-gradient-to-r from-black to-gray-800 bg-[length:200%] animate-gradientMove flex justify-center items-center"
       >
-        <Image src={image} className=" w-full " alt="mockup" />
+        <Image
+          src={image}
+          className=" brightness-110 relative z-20 w-full h-full object-cover object-center cursor-pointer opacity-100 transition-opacity duration-700 rounded-none shadow-none"
+          alt="mockup"
+        />
+        <Image
+          src={image}
+          className="absolute top-0 left-0 w-full h-full object-cover object-center rounded-none opacity-80 transition-opacity duration-500 delay-500 blur-[8px]  "
+          alt="mockup"
+        />
       </motion.figure>
       <motion.div
         initial={{ opacity: 0, x: 200 }}
