@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import mockup from "@/assets/smartmockups_lwpbprcx.png";
 import Image, { StaticImageData } from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -14,7 +13,7 @@ interface ProjectProps {
 
 const Project = ({ image, title, description, tech }: ProjectProps) => {
   return (
-    <article className="overflow-hidden flex flex-col md:flex-row justify-between gap-12 p-6">
+    <article className="overflow-hidden flex flex-col lg:flex-row justify-between gap-12 p-6">
       <motion.figure
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -22,17 +21,14 @@ const Project = ({ image, title, description, tech }: ProjectProps) => {
           duration: 0.4,
           ease: "easeInOut",
         }}
-        className="relative"
+        className="relative h-full"
       >
         <Image
           src={image}
           className="brightness-110 relative z-10 w-full h-full  "
           alt="mockup"
         />
-        <div
-          className="bg-white absolute top-0 left-0 w-full h-full 
-      blur-[6px]"
-        ></div>
+        <div className="bg-white absolute inset-0 w-full h-full blur-md opacity-20"></div>
       </motion.figure>
       <motion.div
         initial={{ opacity: 0, x: 200 }}
