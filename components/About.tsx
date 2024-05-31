@@ -8,8 +8,8 @@ import me from "@/assets/me.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="px-6 pb-40 pt-20 text-lg">
-      <div className="max-w-7xl mx-auto flex flex-col text-white gap-24">
+    <section id="about" className="px-6 pb-40 pt-20 text-lg md:text-2xl">
+      <div className=" max-w-screen-2xl mx-auto flex flex-col text-white gap-24">
         <motion.header
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -33,7 +33,7 @@ const About = () => {
           className="flex flex-col md:flex-row gap-12 justify-between"
         >
           <div className="flex flex-col justify-between gap-20 ">
-            <p className=" font-extralight opacity-70">
+            <p className=" font-extralight opacity-80 font-sans">
               I&apos;m Bernardo, Full Stack JavaScript Developer experienced on
               the <strong>MERN</strong> Stack (MongoDB, Express, React & Node).
               I&apos;ve honed my skills through self-learning and hands-on
@@ -54,7 +54,7 @@ const About = () => {
             </div>
           </div>
           <figure className="md:min-w-[300px] lg:min-w-[500px] max-w-[700px]">
-            <Image src={me} alt="self" className="w-full " />
+            <Image src={me} alt="self" className="w-full rounded-3xl" />
           </figure>
         </motion.div>
       </div>
