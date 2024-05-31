@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section id="about" className="px-6 pb-40 pt-20 text-lg md:text-2xl">
       <div className="mx-auto flex max-w-screen-2xl flex-col gap-24 text-white">
-        <motion.header
+        <motion.h1
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
@@ -21,7 +21,7 @@ const About = () => {
           className="text-6xl font-semibold md:text-8xl"
         >
           Hello 👋,
-        </motion.header>
+        </motion.h1>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -53,11 +53,11 @@ const About = () => {
               ))}
             </div>
           </div>
-          <figure className="lg:w-[50%]">
+          <figure className="group overflow-hidden rounded-3xl lg:w-[50%]">
             <Image
               src={me}
               alt="self portrait"
-              className="w-full rounded-3xl"
+              className="w-full transition-transform ease-in-out group-hover:scale-110"
             />
           </figure>
         </motion.div>

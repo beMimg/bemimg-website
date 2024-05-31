@@ -8,7 +8,7 @@ const Work = () => {
   return (
     <section className="px-6 py-20 text-lg md:text-2xl" id="work">
       <div className="mx-auto flex max-w-screen-2xl flex-col gap-24 text-white">
-        <motion.header
+        <motion.h1
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
@@ -19,7 +19,7 @@ const Work = () => {
           className="text-6xl font-semibold md:text-8xl"
         >
           Work
-        </motion.header>
+        </motion.h1>
         <div className="flex flex-col gap-36 md:gap-52">
           {allProjects.map((project) => (
             <Project

@@ -20,6 +20,7 @@ const Project = ({
   preview,
   code,
 }: ProjectProps) => {
+  // All of this code is used for the project image, when its position at 30%, the filter grayscale will change from 100% to 0%
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref, {
@@ -34,6 +35,7 @@ const Project = ({
       controls.start({ filter: "grayscale(100%) brightness(40%)" });
     }
   }, [inView, controls]);
+  // end
 
   return (
     <article className="flex flex-col justify-center gap-12 overflow-hidden lg:flex-row">
@@ -55,7 +57,7 @@ const Project = ({
         >
           <Image
             src={image}
-            className="w-full transition-all group-hover:scale-110"
+            className="duration-400 w-full transition-transform ease-in-out group-hover:scale-110"
             alt="mockup"
           />
         </motion.div>
@@ -69,16 +71,18 @@ const Project = ({
         }}
         className="flex flex-col justify-between gap-12 lg:w-[50%]"
       >
-        <p className="glow-text text-5xl font-semibold">{title}</p>
+        <h2 className="glow-text text-5xl font-semibold">{title}</h2>
         <p className="font-sans font-extralight opacity-80">{description}</p>
         <p className="font-sans font-extralight opacity-80">{tech}</p>
         <div className="flex flex-row gap-6 lg:gap-8">
           <a
             href={preview}
             target="a_blank"
-            className="flex cursor-pointer flex-row items-center gap-2 self-end rounded-full bg-white p-2 px-4 text-black lg:px-6"
+            className="group flex cursor-pointer flex-row items-center gap-2 self-end rounded-full bg-white p-2 px-4 text-black lg:px-6"
           >
-            <p className="font-light">Visit project</p>
+            <p className="duration-400 font-light transition-all ease-in-out group-hover:font-medium">
+              Visit project
+            </p>
             <RxArrowTopRight />
           </a>
           <a

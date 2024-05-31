@@ -6,14 +6,16 @@ interface ListOfTechsProps {
 }
 const ListOfTechs = ({ title, stack }: ListOfTechsProps) => {
   return (
-    <ul>
-      <h2 className="font-semibold">{title}:</h2>
-      {stack.map((item) => (
-        <li key={item} className="font-sans font-extralight opacity-80">
-          {item}
-        </li>
-      ))}
-    </ul>
+    <div>
+      <span>{title}</span>
+      <ul>
+        {stack.map((item) => (
+          <li key={item} className="font-sans font-extralight opacity-80">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
