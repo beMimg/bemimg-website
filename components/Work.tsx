@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Project from "./Project";
 import { allProjects } from "@/utils/allProjects";
+import { RxArrowTopRight } from "react-icons/rx";
 
 const Work = () => {
   return (

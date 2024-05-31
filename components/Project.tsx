@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { RxArrowTopRight } from "react-icons/rx";
 
 interface ProjectProps {
   image: StaticImageData;
@@ -63,27 +62,27 @@ const Project = ({
           duration: 0.4,
           ease: "easeInOut",
         }}
-        className="flex flex-col justify-between gap-4 lg:w-[50%]"
+        className="flex flex-col justify-between gap-12 lg:w-[50%]"
       >
         <p className="text-5xl font-semibold glow-text">{title}</p>
         <p className="font-extralight opacity-80 font-sans ">{description}</p>
         <p className="font-extralight opacity-80 font-sans">{tech}</p>
-        <div className="flex flex-row justify-evenly">
+        <div className="flex flex-row  gap-6  lg:gap-8 ">
           <a
             href={preview}
             target="a_blank"
-            className="flex flex-row items-center gap-2 self-end rounded-full  cursor-pointer"
+            className="flex flex-row items-center gap-2 self-end rounded-full  bg-white text-black p-2 lg:px-6 px-4 cursor-pointer"
           >
-            <p className="font-medium uppercase">Visit project</p>
-            <FaExternalLinkAlt />
+            <p className=" font-light">Visit project</p>
+            <RxArrowTopRight />
           </a>
           <a
             href={code}
             target="a_blank"
-            className=" flex flex-row items-center rounded-full gap-2 self-end cursor-pointer"
+            className="flex flex-row items-center gap-2 self-end rounded-full  bg-black text-white border border-gray-600 lg:px-6 hover:border-white transition-all p-2  px-4 cursor-pointer"
           >
-            <p className="font-medium uppercase">See code</p>
-            <FaGithub />
+            <p className="font-light">See code</p>
+            <RxArrowTopRight />
           </a>
         </div>
       </motion.div>
