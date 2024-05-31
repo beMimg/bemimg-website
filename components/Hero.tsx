@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { AuroraBackground } from "./ui/aurora-background";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaArrowDown } from "react-icons/fa";
+import { FlipWords } from "./ui/flip-words";
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -10,6 +11,7 @@ const Hero = () => {
   const scale = useTransform(scrollY, [0, 700], [1, 3]);
   const opacity = useTransform(scrollY, [0, 700], [1, 0]);
 
+  const words = ["Bernardo,", "beMimg,"];
   return (
     <section className="overflow-hidden">
       <AuroraBackground>
@@ -23,17 +25,18 @@ const Hero = () => {
           }}
           style={{ scale, opacity }}
           viewport={{ once: true }}
-          className="relative flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
+          className="relative mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4"
         >
-          <h1 className="text-6xl md:text-9xl text-center font-bold dark:text-white">
-            Hi, I&apos;m Bernardo,
+          <h1 className="self-start text-6xl font-bold md:text-9xl dark:text-white">
+            I&apos;m <br className="md:hidden" />
+            <FlipWords words={words} />
           </h1>
-          <h2 className="font-extralight text-center text-2xl md:text-8xl dark:text-neutral-200 py-4">
+          <h2 className="self-start text-2xl font-extralight md:text-8xl dark:text-neutral-200">
             A Full Stack Web Developer.
           </h2>
           <a
             href="#work"
-            className="bg-white animate-bounce flex flex-row items-center gap-2 text-black rounded-full text-xl px-4 py-2"
+            className="hidden flex-row items-center gap-2 self-start rounded-full bg-white px-4 py-2 text-xl text-black md:mt-8 md:flex md:animate-bounce md:self-center"
           >
             <p>See Work</p>
             <FaArrowDown />
