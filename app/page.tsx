@@ -7,7 +7,7 @@ import Work from "@/components/Work";
 export default function Home() {
   return (
     <>
-      <header className="absolute flex items-center justify-center  z-20 top-0 left-0 w-full p-14 ">
+      <header className="absolute left-0 top-0 z-40 flex w-full items-center justify-center p-14">
         <Nav />
       </header>
       <main className="flex flex-col bg-black">

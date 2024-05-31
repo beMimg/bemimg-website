@@ -31,7 +31,7 @@ const Nav = () => {
       viewport={{
         once: true,
       }}
-      className={`w-72 fixed p-2 z-40 mx-auto transition-all flex flex-row items-center gap-2  text-base font-medium rounded-full ${
+      className={`fixed z-40 mx-auto flex w-72 flex-row items-center gap-2 rounded-full p-2 text-base font-medium transition-all ${
         !isTopOfScreen && "bg-glass-effect scale-105"
       }`}
     >

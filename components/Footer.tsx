@@ -5,8 +5,8 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-black h-[300px] text-lg px-6">
-      <div className=" max-w-screen-2xl mx-auto justify-between border-t border-gray-700 py-8  h-full flex flex-row text-white">
+    <footer id="contact" className="h-[300px] bg-black px-6 text-lg">
+      <div className="mx-auto flex h-full max-w-screen-2xl flex-row justify-between border-t border-gray-700 py-8 text-white">
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-1">
             <p>Contact Me</p>
@@ -26,7 +26,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/bemimg/"
               target="a_blank"
-              className="flex flex-row gap-2 items-center self-end"
+              className="flex flex-row items-center gap-2 self-end"
             >
               <p>LinkedIn</p>
               <FaLinkedin />
@@ -34,7 +34,7 @@ const Footer = () => {
             <a
               href="https://github.com/beMimg"
               target="a_blank"
-              className="flex flex-row gap-2 items-center self-end"
+              className="flex flex-row items-center gap-2 self-end"
             >
               <p>GitHub</p>
               <FaGithub />
@@ -42,13 +42,13 @@ const Footer = () => {
             <a
               href="mailto:bemimg.dev@gmail.com"
               target="a_blank"
-              className="flex flex-row gap-2 items-center self-end"
+              className="flex flex-row items-center gap-2 self-end"
             >
               <p>Email</p>
               <MdOutlineEmail />
             </a>
           </div>
-          <p className="text-base md:text-lg font-extralight opacity-70">
+          <p className="text-base font-extralight opacity-70 md:text-lg">
             Cádiz, Spain
           </p>
         </div>

@@ -25,18 +25,18 @@ const Hero = () => {
           viewport={{ once: true }}
           className="relative flex flex-col max-w-7xl mx-auto gap-4 items-center justify-center px-4"
         >
-          <h1 className="text-6xl md:text-9xl font-bold dark:text-white text-center">
-            Hi, I&apos;m Bernardo
+          <h1 className="text-6xl md:text-9xl text-center font-bold dark:text-white">
+            Hi, I&apos;m Bernardo,
           </h1>
-          <h2 className="font-extralight text-2xl md:text-8xl dark:text-neutral-200 py-4">
+          <h2 className="font-extralight text-center text-2xl md:text-8xl dark:text-neutral-200 py-4">
             A Full Stack Web Developer.
           </h2>
           <a
             href="#work"
-            className="bg-white flex flex-row items-center gap-2 text-black rounded-full text-xl px-4 py-2"
+            className="bg-white animate-bounce flex flex-row items-center gap-2 text-black rounded-full text-xl px-4 py-2"
           >
             <p>See Work</p>
-            <FaArrowDown className="animate-bounce" />
+            <FaArrowDown />
           </a>
         </motion.div>
       </AuroraBackground>

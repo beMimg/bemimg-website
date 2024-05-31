@@ -3,12 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Project from "./Project";
 import { allProjects } from "@/utils/allProjects";
-import { RxArrowTopRight } from "react-icons/rx";
 
 const Work = () => {
   return (
-    <section className="text-lg md:text-2xl py-20 px-6" id="work">
-      <div className="flex flex-col text-white gap-24 max-w-screen-2xl mx-auto">
+    <section className="px-6 py-20 text-lg md:text-2xl" id="work">
+      <div className="mx-auto flex max-w-screen-2xl flex-col gap-24 text-white">
         <motion.header
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -17,7 +16,7 @@ const Work = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="text-9xl font-semibold"
+          className="text-6xl font-semibold md:text-8xl"
         >
           Work
         </motion.header>
