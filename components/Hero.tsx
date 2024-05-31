@@ -25,7 +25,7 @@ const Hero = () => {
           }}
           style={{ scale, opacity }}
           viewport={{ once: true }}
-          className="relative mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4"
+          className="relative flex h-full w-full max-w-7xl flex-col items-center justify-center px-6 md:mx-auto md:px-0"
         >
           <h1 className="self-start text-6xl font-bold md:text-9xl dark:text-white">
             I&apos;m <br className="md:hidden" />
