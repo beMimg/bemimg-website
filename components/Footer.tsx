@@ -48,9 +48,7 @@ const Footer = () => {
               <MdOutlineEmail />
             </a>
           </div>
-          <p className="text-base font-extralight opacity-70 md:text-lg">
-            Cádiz, Spain
-          </p>
+          <p className="text-base font-extralight opacity-70">Cádiz, Spain</p>
         </div>
       </div>
     </footer>
