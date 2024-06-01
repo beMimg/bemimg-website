@@ -8,7 +8,7 @@ export const allProjects = [
     image: mockUpPmg,
     title: "PMG Solutions & Development",
     description:
-      "X Clone is a social media platform inspired by X, designed to foster social interactions and sharing within a community. Dynamic platform for text/image posts, follows, likes, and comments. Profile management: trackslikes, posts, follows, and followers.",
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus fugiat vitae omnis? Atque minima earum nisi dolorum, repellendus cupiditate reprehenderit aliquam adipisci sunt aut a odit molestias consectetur impedit omnis?",
     tech: "React, JavaScript, TailwindCSS, Node.js, Express.js, MongoDB, Passport.js, Cloudinary",
     preview: "https://x-clone-bemimg.netlify.app",
     code: "https://github.com/beMimg/x-clone-frontend",
