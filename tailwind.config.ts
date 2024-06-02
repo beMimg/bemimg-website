@@ -15,6 +15,7 @@ const config: Config = {
       animation: {
         aurora: "aurora 60s linear infinite",
         gradientMove: "gradientMove 2s linear infinite",
+        shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
         gradientMove: {
@@ -29,6 +30,14 @@ const config: Config = {
             backgroundPosition: "350% 50%, 350% 50%",
           },
         },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
       },
     },
   },
@@ -38,7 +47,7 @@ const config: Config = {
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   );
 
   addBase({
