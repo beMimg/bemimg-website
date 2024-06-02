@@ -58,7 +58,7 @@ const Project = ({
           <Image
             src={image}
             className="duration-400 w-full transition-transform ease-in-out group-hover:scale-110"
-            alt="mockup"
+            alt={title}
             placeholder="blur"
           />
         </motion.div>

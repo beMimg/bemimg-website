@@ -56,6 +56,7 @@ const About = () => {
           <figure className="group overflow-hidden rounded-3xl lg:w-[50%]">
             <Image
               src={me}
+              placeholder="blur"
               alt="self portrait"
               className="w-full transition-transform ease-in-out group-hover:scale-110"
             />
