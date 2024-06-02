@@ -27,11 +27,11 @@ const Hero = () => {
           viewport={{ once: true }}
           className="relative flex h-full w-full max-w-7xl flex-col items-center justify-center px-6 md:mx-auto md:px-0"
         >
-          <h1 className="self-start text-6xl font-bold md:text-9xl dark:text-white">
+          <h1 className="self-start text-6xl font-bold text-white md:text-9xl">
             I&apos;m <br className="md:hidden" />
             <FlipWords words={words} />
           </h1>
-          <h2 className="self-start text-2xl font-extralight md:text-8xl dark:text-neutral-200">
+          <h2 className="self-start text-2xl font-extralight text-neutral-200 md:text-8xl">
             A Full Stack Web Developer.
           </h2>
           <a
