@@ -8,9 +8,9 @@ export const allProjects = [
     image: mockUpPmg,
     title: "PMG Solutions & Development",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus fugiat vitae omnis? Atque minima earum nisi dolorum, repellendus cupiditate reprehenderit aliquam adipisci sunt aut a odit molestias consectetur impedit omnis?",
-    tech: "React, JavaScript, TailwindCSS, Node.js, Express.js, MongoDB, Passport.js, Cloudinary",
-    preview: "https://x-clone-bemimg.netlify.app",
+      "Developed a professional website for a consulting firm specializing in SAP solutions. The site comprises four main pages: Home, About, Services, and Contact. This project was focused on creating a user-friendly and informative platform to highlight the company's expertise and services in the SAP domain.",
+    tech: "React, JavaScript, TypeScript, TailwindCSS",
+    preview: "https://pmg-solutions.es",
     code: "https://github.com/beMimg/x-clone-frontend",
   },
   {
