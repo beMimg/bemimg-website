@@ -11,13 +11,13 @@ export const allProjects = [
       "Developed a professional website for a consulting firm specializing in SAP solutions. The site comprises four main pages: Home, About, Services, and Contact. This project was focused on creating a user-friendly and informative platform to highlight the company's expertise and services in the SAP domain.",
     tech: "React, JavaScript, TypeScript, TailwindCSS",
     preview: "https://pmg-solutions.es",
-    code: "https://github.com/beMimg/x-clone-frontend",
+    code: "https://github.com/beMimg/PMG",
   },
   {
     image: mockUpXClone,
     title: "X Clone",
     description:
-      "X Clone is a social media platform inspired by X, designed to foster social interactions and sharing within a community. Dynamic platform for text/image posts, follows, likes, and comments. Profile management: trackslikes, posts, follows, and followers.",
+      "X Clone is a social media platform inspired by X, designed to foster social interactions and sharing within a community. It offers a dynamic environment for posting text and images, following other users, liking posts, and leaving comments. With comprehensive profile management features, users can easily track their likes, posts, follows, and followers",
     tech: "React, JavaScript, TailwindCSS, Node.js, Express.js, MongoDB, Passport.js, Cloudinary",
     preview: "https://x-clone-bemimg.netlify.app",
     code: "https://github.com/beMimg/x-clone-frontend",
