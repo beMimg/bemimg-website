@@ -6,7 +6,7 @@ export const techStack = [
       "CSS",
       "JavaScript",
       "TypeScript",
-      "React.js",
+      "React",
       "TailwindCSS",
       "Next.js",
       "Framer Motion",

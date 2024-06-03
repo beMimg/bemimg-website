@@ -34,10 +34,10 @@ const About = () => {
         >
           <div className="flex flex-col justify-between gap-12 lg:w-[50%]">
             <p className="font-sans font-extralight opacity-80">
-              I&apos;m Bernardo, Full Stack JavaScript Developer experienced on
-              the <strong>MERN</strong> Stack (MongoDB, Express, React & Node).
-              I&apos;ve honed my skills through self-learning and hands-on
-              projects. I&apos;m passionate about{" "}
+              I&apos;m Bernardo, a Full Stack JavaScript Developer experienced
+              on the <strong>MERN</strong> Stack (MongoDB, Express.js, React &
+              Node.js). I&apos;ve honed my skills through self-learning and
+              hands-on projects. I&apos;m passionate about{" "}
               <strong>problem-solving</strong>, <strong>coding</strong> and{" "}
               <strong>learning</strong>. After a long journey driven by my
               passion for programming, I&apos;ve decided to make a career change
