@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { techStack } from "@/utils/techStack";
 import ListOfTechs from "./ListOfTechs";
 import Image from "next/image";
-import me from "@/assets/me.jpg";
+import me from "@/assets/images/me.jpg";
 
 const About = () => {
   return (

@@ -1,7 +1,7 @@
-import mockUpMovieWish from "@/assets/mockup-moviewish.jpg";
-import mockUpMessageApp from "@/assets/mockup-messageapp.jpg";
-import mockUpXClone from "@/assets/mockup-xclone.jpg";
-import mockUpPmg from "@/assets/mockup-pmg.jpg";
+import mockUpMovieWish from "@/assets/images/mockup-moviewish.jpg";
+import mockUpMessageApp from "@/assets/images/mockup-messageapp.jpg";
+import mockUpXClone from "@/assets/images/mockup-xclone.jpg";
+import mockUpPmg from "@/assets/images/mockup-pmg.jpg";
 
 export const allProjects = [
   {
