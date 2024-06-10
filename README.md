@@ -29,5 +29,5 @@ Take a glimpse at my website interface:
 
 For any questions or issues, please contact me at:  
 
--- **Email**: bemimg.dev@gmail.com
--- **GitHub**: github.com/bemimg
+-- **Email**: bemimg.dev@gmail.com  
+-- **GitHub**: [github.com/bemimg](https://github.com/beMimg)
