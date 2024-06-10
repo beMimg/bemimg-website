@@ -12,6 +12,7 @@ const Hero = () => {
   const opacity = useTransform(scrollY, [0, 700], [1, 0]);
 
   const words = ["Bernardo,", "beMimg,"];
+
   return (
     <section className="overflow-hidden">
       <AuroraBackground>
@@ -25,7 +26,7 @@ const Hero = () => {
           }}
           style={{ scale, opacity }}
           viewport={{ once: true }}
-          className="relative flex h-full w-full max-w-7xl flex-col items-center justify-center px-6 md:mx-auto md:px-0"
+          className="relative flex h-full w-full max-w-7xl flex-col items-center justify-center px-6 md:mx-auto xl:px-0"
         >
           <h1 className="self-start text-6xl font-bold text-white md:text-9xl">
             I&apos;m <br className="md:hidden" />
