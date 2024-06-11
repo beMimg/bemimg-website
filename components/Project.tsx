@@ -41,8 +41,8 @@ const Project = ({
   return (
     <article className="flex flex-col justify-center gap-7 overflow-hidden md:gap-12 lg:flex-row">
       <motion.figure
-        initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ x: -200 }}
+        whileInView={{ x: 0 }}
         transition={{
           duration: 0.4,
           ease: "easeInOut",
