@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import { RxArrowTopRight } from "react-icons/rx";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectProps {
   image: StaticImageData;
@@ -38,7 +39,7 @@ const Project = ({
   // end
 
   return (
-    <article className="flex flex-col justify-center gap-12 overflow-hidden lg:flex-row">
+    <article className="flex flex-col justify-center gap-7 overflow-hidden md:gap-12 lg:flex-row">
       <motion.figure
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -70,9 +71,11 @@ const Project = ({
           duration: 0.4,
           ease: "easeInOut",
         }}
-        className="flex flex-col justify-between gap-12 lg:w-[50%]"
+        className="flex flex-col justify-between gap-7 md:gap-12 lg:w-[50%]"
       >
-        <h2 className="glow-text text-5xl font-semibold">{title}</h2>
+        <h2 className="glow-text text-2xl font-semibold md:text-5xl">
+          {title}
+        </h2>
         <p className="font-sans font-extralight opacity-80">{description}</p>
         <p className="font-sans font-extralight opacity-80">{tech}</p>
         <div className="flex flex-row gap-6 lg:gap-8">
@@ -92,7 +95,7 @@ const Project = ({
             className="flex cursor-pointer flex-row items-center gap-2 self-end rounded-full border border-gray-600 bg-black p-2 px-4 text-white transition-all hover:border-white lg:px-6"
           >
             <p className="font-light">See code</p>
-            <RxArrowTopRight />
+            <FaGithub />
           </a>
         </div>
       </motion.div>

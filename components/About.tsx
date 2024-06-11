@@ -20,7 +20,7 @@ const About = () => {
           }}
           className="text-6xl font-semibold md:text-8xl"
         >
-          Hello 👋,
+          About
         </motion.h1>
         <motion.div
           initial={{ opacity: 0 }}
@@ -34,12 +34,12 @@ const About = () => {
         >
           <div className="flex flex-col justify-between gap-12 lg:w-[50%]">
             <p className="font-sans font-extralight opacity-80">
-              I&apos;m Bernardo, a Full Stack JavaScript Developer experienced
-              on the <strong>MERN</strong> Stack (MongoDB, Express.js, React &
-              Node.js). I&apos;ve honed my skills through self-learning and
-              hands-on projects. I&apos;m passionate about{" "}
-              <strong>problem-solving</strong>, <strong>coding</strong> and{" "}
-              <strong>learning</strong>. After a long journey driven by my
+              Hi, I&apos;m Bernardo, a Full Stack JavaScript Developer
+              experienced on the <strong>MERN</strong> Stack (MongoDB,
+              Express.js, React & Node.js) and I&apos;ve honed my skills through
+              self-learning and hands-on projects.<br></br> I&apos;m passionate
+              about <strong>problem-solving</strong>, <strong>coding</strong>,{" "}
+              <strong>learning</strong> and after a long journey driven by my
               passion for programming, I&apos;ve decided to make a career change
               to pursue this dream.
             </p>
