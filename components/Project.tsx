@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import { RxArrowTopRight } from "react-icons/rx";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectProps {
   image: StaticImageData;
@@ -94,7 +95,7 @@ const Project = ({
             className="flex cursor-pointer flex-row items-center gap-2 self-end rounded-full border border-gray-600 bg-black p-2 px-4 text-white transition-all hover:border-white lg:px-6"
           >
             <p className="font-light">See code</p>
-            <RxArrowTopRight />
+            <FaGithub />
           </a>
         </div>
       </motion.div>
